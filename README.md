@@ -62,7 +62,7 @@
     `email`: "STRING",
     `senha`: "STRING"
 }
-3. Pelo `Query` `:NumeroCONTA` digite o numero da conta que deve ser alterada.
+3. Em `:NumeroCONTA` digite o numero da conta que deve ser alterada.
 4. O Sistema verificará se não há nenhuma outra conta com o mesmo cpf e email ou se está faltando algum dado.
 5. Se a requisição for bem sucedida a resposta será um *Status Code 204*.
 
@@ -108,7 +108,7 @@ obs: A conta não deve ter saldo para ser excluida.
 
 **Emitir extrato bancário**
 1. Para emitir extrato, envie uma requisição pelo metodo `GET` pela rota `/contas/extrato?numero_conta=X&senha=Y` onde *X* é o numero da conta e *Y* é a senha.
-2. Se a requisição for bem sucedida a resposta será um objeto contendo o saldo da conta *X*.
+2. Se a requisição for bem sucedida a resposta será um objeto contendo o extrato da conta *X*.
    
 --- 
 **Previews**
