@@ -33,7 +33,7 @@
 3. De acordo com a mudança de rota a resposta deverá ser dada nos status, mas em *status 204* não haverá resposta enviada de volta, mas a requisição foi bem sucedida.
    
 ## Criar conta bancária
-1. Envie pelo `Body` da pagina um objeto contendo:
+1. Envie pelo método `POST` na rota `http://localhost:3000/contas` e pelo `Body` da pagina um objeto contendo:
    
    {
     `nome`: "STRING",
