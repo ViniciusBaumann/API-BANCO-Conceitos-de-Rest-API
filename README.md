@@ -30,7 +30,7 @@
 **Como Usar**
 1. Para iniciar a api, digite no console `npm run dev`
 2. Envie as requisições para a rota `http://localhost:3000`, pode ser pelo navegador, mas recomendo o uso do Insomnia ou de outro app.
-3. De acordo com a mudança de rota a resposta deverá ser dada nos status, mas em *status 204* não haverá resposta enviada de volta, mas a requisição foi bem sucedida.
+3. De acordo com a mudança de rota a resposta deverá ser dada nos status ou em um objeto em formato JSON()
    
 **Criar conta bancária**
 1. Envie pelo método `POST` na rota `/contas` pelo `Body` da pagina um objeto contendo:
