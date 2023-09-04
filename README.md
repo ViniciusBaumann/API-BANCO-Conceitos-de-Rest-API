@@ -94,13 +94,14 @@ obs: A conta não deve ter saldo para ser excluida.
 
 **Transferir valores entre contas bancárias**
 1. Envie pelo método `POST` na rota `/transacoes/transferir` pelo `Body` da pagina um objeto contendo:
+   
    {
 	`numero_conta_origem`: "STRING",
 	`numero_conta_destino`: "STRING",
 	`valor`: NUMBER,
 	`senha`: "STRING"
 }
-2. Se a requisição for bem sucedida a resposta será um *Status Code 204*.
+3. Se a requisição for bem sucedida a resposta será um *Status Code 204*.
 
 **Consultar saldo da conta bancária**
 1. Para consultar saldo, envie uma requisição pelo metodo `GET` pela rota `/contas/saldo?numero_conta=X&senha=Y` onde *X* é o numero da conta e *Y* é a senha.
